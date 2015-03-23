@@ -1,7 +1,7 @@
 # elem-validators
 ElemValidators module
 =====================
-Version 1.0 Created by Elemental Media S.L. [agustincl.at.gmail.com]
+Version 1.0 Created by Elemental Media S.L.
 
 Introduction
 ------------
@@ -16,4 +16,4 @@ Usage
  
 2. Use with the namespace
 
-That's all.
+That's all. 
