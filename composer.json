@@ -5,7 +5,7 @@
     "keywords": [
         "zf2", "forms", "validators"
     ],
-    "homepage": "https://github.com/Elementalmedia/ElemValidators",
+    "homepage": "https://github.com/elementalmedia/elem-validators",
     "authors": [
         {
             "name": "Agustín Calderón",
@@ -20,6 +20,5 @@
         "psr-4" : {
             "ElemValidators\\" : "src/"
         }
-    },
-    
+    }     
 }
