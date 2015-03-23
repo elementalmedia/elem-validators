@@ -1,0 +1,25 @@
+{
+    "name": "elemental/elem-validators",
+    "description": "ElemValidators is a collection of validators for ZF2 forms.",
+    "type": "library",
+    "keywords": [
+        "zf2", "forms", "validators"
+    ],
+    "homepage": "https://github.com/Elementalmedia/ElemValidators",
+    "authors": [
+        {
+            "name": "Agustín Calderón",
+            "email": "agustincl@gmail.com",
+            "homepage": "http://elemedia.net/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "ElemValidators\\" : "src/"
+        }
+    },
+    
+}
