@@ -17,8 +17,8 @@
         "php": ">=5.3"
     },
     "autoload" : {
-        "psr-0" : {
-            "ElemValidators\\" : "src/"
+        "psr-4" : {
+            "ElemValidators\\" : "elemental/elem-validators/src/"
         }
     }     
 }
