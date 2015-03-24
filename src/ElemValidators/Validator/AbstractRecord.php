@@ -6,19 +6,7 @@ use Zend\Validator\AbstractValidator;
 
 abstract class AbstractRecord extends AbstractValidator
 {
-    /**
-     * Error constants
-     */
-    const ERROR_NO_RECORD_FOUND = 'noRecordFound';
-    const ERROR_RECORD_FOUND    = 'recordFound';
-
-    /**
-     * @var array Message templates
-     */
-    protected $messageTemplates = array(
-        self::ERROR_NO_RECORD_FOUND => "No record matching the input was found",
-        self::ERROR_RECORD_FOUND    => "A record matching the input was found",
-    );
+    
 
     /**
      * @var UserInterface
@@ -94,16 +82,14 @@ abstract class AbstractRecord extends AbstractValidator
      * @param string $value
      * @return mixed
      */
-    protected function query($filters)
+    protected function query($value)
     {
+        $filters[$this->getKey()] = $value;
         $result = false;
-        
         if(!$this->getMapper()->enableFilters($filters))
-        {
             throw new \Exception('Invalid filters used in record validator');
-        }
+        
         $result = $this->getMapper()->findByFilters($filters);
-       
         return $result;
     }
 }
