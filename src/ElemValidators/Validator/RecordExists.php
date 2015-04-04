@@ -19,11 +19,11 @@ class RecordExists extends AbstractRecord
         $valid = true;
         $this->setValue($value);
         $result = $this->query($value);
-        if ($result["total_items"]==0) {
+        
+        if ($result->total_items==0) {
             $valid = false;
             $this->error(self::ERROR_NO_RECORD_FOUND);
         }
-
         return $valid;
     }
 }

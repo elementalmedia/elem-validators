@@ -19,7 +19,7 @@ class NoRecordExists extends AbstractRecord
         $valid = true;
         $this->setValue($value);
         $result = $this->query($value);
-        if ($result["total_items"]!=0) {
+        if ($result->total_items!=0) {
             $valid = false;
             $this->error(self::ERROR_RECORD_FOUND);
         }

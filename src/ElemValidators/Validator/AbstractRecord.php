@@ -86,8 +86,8 @@ abstract class AbstractRecord extends AbstractValidator
     {
         $filters[$this->getKey()] = $value;
         $result = false;
-        if(!$this->getMapper()->enableFilters($filters))
-            throw new \Exception('Invalid filters used in record validator');
+//         if(!$this->getMapper()->enableFilters($filters))
+//             throw new \Exception('Invalid filters used in record validator');
         
         $result = $this->getMapper()->findByFilters($filters);
         return $result;
