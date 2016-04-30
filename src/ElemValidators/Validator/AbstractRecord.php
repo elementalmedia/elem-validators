@@ -49,7 +49,7 @@ abstract class AbstractRecord extends AbstractValidator
      * @param UserInterface $mapper
      * @return AbstractRecord
      */
-    public function setMapper(Interfaces\Record $mapper)
+    public function setMapper($mapper)
     {
         $this->mapper = $mapper;
         return $this;
